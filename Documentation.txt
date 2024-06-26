@@ -1,0 +1,19 @@
+================= Code To CREATE THE BARBAR SHOP TABLE IN THE SHOP DATABASE =======================
+
+CREATE TABLE barbarshop (sno INT AUTO_INCREMENT PRIMARY KEY, fname VARCHAR(20) NOT NULL, sname VARCHAR(20), shopname VARCHAR(40) UNIQUE, city VARCHAR(50) NOT NULL, state VARCHAR(50) NOT NULL, zip INT NOT NULl);
+
+===================================================================================================
+
+Is while loop se sare ke sare content display hote hain
+<?php
+    $sql = "select * from `barbarshop`;";
+    $result = mysqli_query($conn, $sql);
+
+    while($row = mysqli_fetch_assoc($result))
+    {
+      echo $row['sno'] ." ". $row['fname'] ." ". $row['sname'] ." ". $row['shopname'] ." ".$row['city'] ." ".$row['state']." ". $row['zip'];
+      echo "<br>";
+    }
+  ?>
+
+===================================================================================================

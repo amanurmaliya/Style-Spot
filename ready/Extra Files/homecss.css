@@ -1,0 +1,30 @@
+
+
+.time-slot {
+    margin: 5px;
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.time-slot.booked {
+    background-color: #ccc;
+    color: #555;
+    cursor: not-allowed;
+}
+
+.time-slot.free {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+.time-slot.selected {
+    background-color: #007bff;
+    color: #fff;
+}

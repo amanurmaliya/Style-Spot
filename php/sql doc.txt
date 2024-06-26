@@ -1,0 +1,18 @@
+============================== CREATE TABLE CUSTOMER ==================================================================================
+
+CREATE TABLE customer (Id int AUTO_INCREMENT PRIMARY KEY, Username varchar(200), Email varchar(200), 
+Phone varchar(10), Age int, password varchar(200) );
+
+=============================== CREATE TBALE SHOPKEEPER ============================================================================
+
+CREATE TABLE shopkeeper (Id int AUTO_INCREMENT PRIMARY KEY, Username varchar(200), Email varchar(200), Age int, password varchar(200) , Location varchar(200));
+
+==================================
+
+mysqli_query($conn, "CREATE TABLE `$username` (
+                        Currtime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                        Username VARCHAR(200),
+                        Appointmenttime VARCHAR(5),
+                        Servicetype VARCHAR(50),
+                        Amount INT
+                        )") or die("Couldn't Connect..");

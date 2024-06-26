@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Register</title>
+</head>
+<body>
+      <div class="container">
+        <div class="box form-box">
+
+
+            <header>Sign Up</header>
+            <form action="" method="post">
+                <div class="field input">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" autocomplete="off" required>
+                </div>
+
+                <div class="field input">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" autocomplete="off" required>
+                </div>
+
+                <div class="field input">
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" autocomplete="off" required>
+                </div>
+                <div class="field input">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" autocomplete="off" required>
+                </div>
+
+                <div class="field input">
+                    <label for="userType">Select User Type:</label>
+                    <select id="userType" onchange="toggleLocation()">
+                        <option value="customer">Customer</option>
+                        <option value="shopkeeper">Shopkeeper</option>
+                    </select>
+                </div>
+
+                <div class="field input" id="locationField" style="display: none;">
+                    <label for="location">Location</label>
+                    <select id="location" name="location">
+                        <option value="01">01 Ambedkar Ward</option>
+                        <!-- All other options here -->
+                        <option value="46">Satna Railway Colony (OG) - Ward No.46</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <input type="submit" class="btn" name="submit" value="Register" required>
+                </div>
+                <div class="links">
+                    Already a member? <a href="index.php">Sign In</a>
+                </div>
+            </form>
+        </div>
+      </div>
+
+      <script>
+    function toggleLocation() {
+        var userType = document.getElementById('userType').value;
+        var locationField = document.getElementById('locationField');
+        if (userType === 'shopkeeper') {
+            locationField.style.display = 'block';
+        } else {
+            locationField.style.display = 'none';
+        }
+    }
+    </script>
+</body>
+</html>

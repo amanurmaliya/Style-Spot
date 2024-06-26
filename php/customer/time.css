@@ -1,0 +1,10 @@
+body{
+    background-image: url('bg_image.webp');
+    background-attachment: fixed;
+    /* opacity: ; */
+}
+
+h1{
+    text-align  : center;
+}
+

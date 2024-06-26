@@ -1,0 +1,280 @@
+    .para {
+      background-color: #85ef6481;
+      margin: auto;
+      padding: auto;
+      animation-delay: 20s;
+      transition: all;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff; /* Set background color to white */
+    }
+    header {
+      background-color: #ffffff; /* Set header background color to white */
+      color: #000000; /* Set header text color to black */
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #ffffff; /* Remove header border */
+      animation: fadeIn 1s ease-in-out;
+      background-image: url(img/bgimg.png);
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    nav {
+      background-color: #0d0c0c; /* Set navigation background color to white */
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      animation: slideIn 1s ease-in-out;
+      background-image:;
+    }
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    nav a {
+      color: #fefcfc; /* Set navigation link color to black */
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      font-family: Arial, sans-serif; /* Set font type to Arial */
+    }
+    nav a:hover {
+      background-color: #fa9b78; /* Set hover background color to green */
+      transform: scale(1.1);
+      color: #ffffff; /* Set hover text color to white */
+    }
+    section {
+      padding: 2px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    footer {
+      background-color: #0b0101; /* Set footer background color to light gray */
+      color: #fdf9f9; /* Set footer text color to black */
+      text-align: center;
+      padding: 10px;
+      bottom: 0;
+      width: 100%;
+      animation: slideInUp 1s ease-in-out;
+    }
+    @keyframes slideInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    footer .para {
+      color: #0c0b0b; /* Set paragraph text color to black */
+      line-height: 1.6;
+      background-color: #fcf7f7;
+    }
+    .about-image {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    body {
+      background-color: #0e0808;
+      width: 100%;
+      height: 100%;
+        
+      background-image: url();}
+    footer section {
+      background-color: #110404; /* Set footer section background color to white */
+      color: #f9f5f5; /* Set footer section text color to black */
+    }
+    footer section h2 {
+      color: #0a0a0a; /* Set footer section header text color to black */
+    }
+    .animated-text {
+      font-size: 3rem;
+      background: linear-gradient(to right, #ff9966, #ff5e62, #ff63e6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: animate 5s linear infinite;
+    }
+    @keyframes animate {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    .feature_img {
+      width: 550px;
+      position: absolute;
+      bottom: 0%;
+      right: 0%;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: moveup 0.5s linear forwards;
+    }
+    @keyframes moveup {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .content {
+      text-align: center;
+      margin-top: 10%;
+      max-width: 600px;
+    }
+    .content h1 {
+      font-size: 70px;
+      color: #030202;
+      animation: colorChange 5s infinite; /* Add animation to the h1 element */
+    }
+    @keyframes colorChange {
+      0% {
+        color:#FCF5ED;
+      }
+      50% {
+        color:#F4BF96;
+      }
+      100% {
+        color:#CE5A67;
+      }
+    }    .gallery {
+      height: 50%; /* set the height to 80% */
+      width: 50%; /* set the width to 100% */
+      display: flex; /* set the display to flex */
+      margin: 5% auto 0; /* set the margin to 5% auto 0 */
+      box-sizing: border-box; /* set the box-sizing to border-box */
+    }
+    
+    /* target the image-box class */
+    .image-box {
+      margin: 0 1%;
+      flex-grow: 1;
+      flex-basis: 0;
+      transition: 10s; /* set the margin to 0 1% */
+    }
+    
+    /* target the image element inside the image-box class */
+    .image-box img {
+      width: 100%; /* set the width to 100% */
+      height: 100%; /* set the height to 100% */
+      object-fit: cover;
+transition: .5s; /* set the object-fit to cover */
+    } 
+    .image-box:hover{
+        flex-basis: 20%;
+    }
+    .active{
+        flex-basis: 20%;
+    }
+    .gallery:hover .active{
+        flex-basis: 0;
+    }
+    .image-box:nth-child(1):hover{
+        flex-basis: 20%;
+    }
+    /* Add a border to the image-box class */
+.image-box {
+  border: 5px solid #1413128c;
+  margin: 0 1%;
+  flex-grow: 1;
+  flex-basis: 0;
+  transition:.5s;
+}
+
+/* Modify the background color of the active and hover states of the image-box class */
+.image-box.active,.image-box:hover {
+
+  flex-basis: 20%;
+}
+
+/* Modify the background color of the gallery class */
+.gallery {
+  background-color: #131010;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  margin: 5% auto 0;
+  box-sizing: border-box;
+}
+
+/* Modify the background color of the footer class */
+footer {
+  background-color: #fcf9f7;
+  color: #000000;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Modify the background color of the footer section class */
+footer section {
+  background-color: #f7e4da;
+  color: #000000;
+}
+
+/* Modify the background color of the footer section h2 class */
+footer section h2 {
+  color: #000000;
+}
+
+/* Modify the background color of the para class */
+.para {
+
+  color: #000000;
+  line-height: 1.6;
+}
+body {
+  animation: bodyColorChange 5s infinite;
+}
+
+@keyframes bodyColorChange {
+  0% {
+    background-color: rgb(1, 0, 0);
+  }
+  50% {
+    background-color: #1F1717;
+  }
+  100% {
+    background-color: #1F1717;
+  }
+}
